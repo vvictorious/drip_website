@@ -22,10 +22,24 @@ img {
 
 /*typography
 =================================*/
+
+h1 {
+	font-weight: 300;
+	font-size: 1.7rem;
+	margin-top: 0;
+}
 .title {
 	font-size: 1.5rem;
 	color: #EAEAEA;
 	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+}
+
+@media (min-width: 60rem) {
+	.title {
+		font-size: 1.8rem;
+	}
 }
 
 
@@ -51,6 +65,9 @@ img {
 	background: #EAEAEA;
 }
 
+
+
+
 /*header
 =================================*/
 
@@ -58,7 +75,7 @@ header {
 	position: absolute;
 	left: 0;
 	right: 0;
-	margin-top: 1em;
+	margin: 1em;
 }
 
 nav ul {
@@ -86,14 +103,89 @@ nav a:focus {
 	color: #DDD;
 }
 
+@media (min-width: 60rem) {
+	.logo {
+		float: left;
+	}
+	nav {
+		float: right;
+	}
+}
+@media (min-width: 320px) {
+	nav a {
+		font-size: .7rem;
+		padding: .25em;
+	}
+}
+
+
 /*home-hero
 =================================*/
 
 .home-hero {
 	background-image: url(images/model6.jpg);
 	background-size: cover;
+	background-position: center;
 	padding: 10em 0;
 }
+
+@media (min-width: 60rem) {
+	.home-hero {
+		height: 100vh;
+		padding-top: 54vh;
+	}
+}
+
+/*hero-home
+=================================*/
+
+.home-about-textbox {
+	background-color: #231F20;
+	padding: 4em;
+	width: 100vw;
+	margin-left: -2.6%;
+	outline: 2px solid #AD974F;
+	outline-offset: -2.5em;
+	color: white;
+	position: relative;
+}
+
+.home-about-textbox h1 {
+	color: #AD974F;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: .95em; 
+	background: #231F20;
+	padding: 0 .25em;
+}
+
+
+
+
+
+@media (min-width: 25rem) {
+	h1 {
+		font-size: 2rem;
+	}
+	.home-about-textbox h1 {
+		top: .65em;
+		padding: 0 .325em;
+	}
+}
+
+@media (min-width: 60rem) {
+	h1 {
+		font-size: 2.5rem;
+	}
+	.home-about-textbox h1 {
+		top: .4em;
+		padding: 0 .6em;
+	}
+}
+
+
+
 
 
 
