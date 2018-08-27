@@ -2,6 +2,7 @@
 
 * {
 	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
 }
 
 body {
@@ -70,6 +71,17 @@ p:last-of-type {
 	border-width: 2px;
 	border-style: solid;
 	padding: .25em 1.75em;
+}
+
+@media (min-width: 60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+}
+
+.button-small {
+	font-size: .7rem;
+	font-weight: 700;
 }
 
 .button-accent {
@@ -215,6 +227,62 @@ nav a:focus {
 		transform: translateX(0);
 	}
 }
+
+
+/*portfolio
+=================================*/
+
+
+
+.portfolio {
+	margin: 3em 0;
+}
+
+.clothes-item {
+	margin: 0;
+	position: relative;
+}
+
+.clothes-item img {
+	display: block;
+}
+
+.clothes-desc {
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	color: white;
+	background: rgba(0,0,0,.6);
+	padding-bottom: 1em;
+}
+
+.clothes-desc p {
+	margin: 1em;
+}
+
+@media (min-width: 37rem) {
+	.clothes-item {
+		width: 50%;
+		float: left;
+	}	
+}
+
+@media (min-width: 60rem) {
+	.clothes-item {
+		width: 50%;
+		overflow: hidden;
+	}
+	.clothes-desc {
+		transform: translateY(150%);
+	}	
+	.clothes-item:hover .clothes-desc {
+		transform: translateY(0%);
+	}
+}
+
+
 
 
 
