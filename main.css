@@ -423,7 +423,26 @@ ul {
 .contact h3 {
 	color: #EAEAEA;
 }
+.company-info h1 {
+	line-height: 1.2;
+}
+.company-info ul {
+	line-height: 1.6;
+}
 
+
+@media (min-width: 700px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	.wrapper > *{
+		padding: 2em;
+	}
+	.company-info h1, .company-info ul, .brand{
+		text-align: left;
+	}
+}
 
 
 
