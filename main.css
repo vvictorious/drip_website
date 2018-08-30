@@ -429,6 +429,13 @@ ul {
 .company-info ul {
 	line-height: 1.6;
 }
+.alert {
+	padding: 10px;
+	background: #AD974F;
+	color: #231F20;
+	margin-bottom: 10px;
+	display: none;
+}
 
 
 @media (min-width: 700px) {
